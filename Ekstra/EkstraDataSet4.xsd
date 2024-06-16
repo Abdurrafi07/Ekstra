@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EkstraDataSet4" targetNamespace="http://tempuri.org/EkstraDataSet4.xsd" xmlns:mstns="http://tempuri.org/EkstraDataSet4.xsd" xmlns="http://tempuri.org/EkstraDataSet4.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="EkstraConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="EkstraConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Ekstra.Properties.Settings.GlobalReference.Default.EkstraConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataSiswaEkstrakurikulerTableAdapter" GeneratorDataComponentClassName="DataSiswaEkstrakurikulerTableAdapter" Name="DataSiswaEkstrakurikuler" UserDataComponentName="DataSiswaEkstrakurikulerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EkstraConnectionString (Settings)" DbObjectName="Ekstra.dbo.DataSiswaEkstrakurikuler" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT NIS, nama_siswa, JK, nama_ekskul, tanggal FROM dbo.DataSiswaEkstrakurikuler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="NIS" DataSetColumn="NIS" />
+              <Mapping SourceColumn="nama_siswa" DataSetColumn="nama_siswa" />
+              <Mapping SourceColumn="JK" DataSetColumn="JK" />
+              <Mapping SourceColumn="nama_ekskul" DataSetColumn="nama_ekskul" />
+              <Mapping SourceColumn="tanggal" DataSetColumn="tanggal" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="StatistikJumlahSiswaPerEkstrakurikulerTableAdapter" GeneratorDataComponentClassName="StatistikJumlahSiswaPerEkstrakurikulerTableAdapter" Name="StatistikJumlahSiswaPerEkstrakurikuler" UserDataComponentName="StatistikJumlahSiswaPerEkstrakurikulerTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="EkstraConnectionString (Settings)" DbObjectName="Ekstra.dbo.StatistikJumlahSiswaPerEkstrakurikuler" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nama_ekskul, jumlah_siswa FROM dbo.StatistikJumlahSiswaPerEkstrakurikuler</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="nama_ekskul" DataSetColumn="nama_ekskul" />
+              <Mapping SourceColumn="jumlah_siswa" DataSetColumn="jumlah_siswa" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EkstraDataSet4" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="EkstraDataSet4" msprop:Generator_DataSetName="EkstraDataSet4">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataSiswaEkstrakurikuler" msprop:Generator_RowEvHandlerName="DataSiswaEkstrakurikulerRowChangeEventHandler" msprop:Generator_RowDeletedName="DataSiswaEkstrakurikulerRowDeleted" msprop:Generator_RowDeletingName="DataSiswaEkstrakurikulerRowDeleting" msprop:Generator_RowEvArgName="DataSiswaEkstrakurikulerRowChangeEvent" msprop:Generator_TablePropName="DataSiswaEkstrakurikuler" msprop:Generator_RowChangedName="DataSiswaEkstrakurikulerRowChanged" msprop:Generator_RowChangingName="DataSiswaEkstrakurikulerRowChanging" msprop:Generator_TableClassName="DataSiswaEkstrakurikulerDataTable" msprop:Generator_RowClassName="DataSiswaEkstrakurikulerRow" msprop:Generator_TableVarName="tableDataSiswaEkstrakurikuler" msprop:Generator_UserTableName="DataSiswaEkstrakurikuler">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="NIS" msprop:Generator_ColumnPropNameInRow="NIS" msprop:Generator_ColumnPropNameInTable="NISColumn" msprop:Generator_ColumnVarNameInTable="columnNIS" msprop:Generator_UserColumnName="NIS">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_siswa" msprop:Generator_ColumnPropNameInRow="nama_siswa" msprop:Generator_ColumnPropNameInTable="nama_siswaColumn" msprop:Generator_ColumnVarNameInTable="columnnama_siswa" msprop:Generator_UserColumnName="nama_siswa">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="JK" msprop:Generator_ColumnPropNameInRow="JK" msprop:Generator_ColumnPropNameInTable="JKColumn" msprop:Generator_ColumnVarNameInTable="columnJK" msprop:Generator_UserColumnName="JK" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nama_ekskul" msprop:Generator_ColumnPropNameInRow="nama_ekskul" msprop:Generator_ColumnPropNameInTable="nama_ekskulColumn" msprop:Generator_ColumnVarNameInTable="columnnama_ekskul" msprop:Generator_UserColumnName="nama_ekskul">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tanggal" msprop:Generator_ColumnPropNameInRow="tanggal" msprop:Generator_ColumnPropNameInTable="tanggalColumn" msprop:Generator_ColumnVarNameInTable="columntanggal" msprop:Generator_UserColumnName="tanggal" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="StatistikJumlahSiswaPerEkstrakurikuler" msprop:Generator_RowEvHandlerName="StatistikJumlahSiswaPerEkstrakurikulerRowChangeEventHandler" msprop:Generator_RowDeletedName="StatistikJumlahSiswaPerEkstrakurikulerRowDeleted" msprop:Generator_RowDeletingName="StatistikJumlahSiswaPerEkstrakurikulerRowDeleting" msprop:Generator_RowEvArgName="StatistikJumlahSiswaPerEkstrakurikulerRowChangeEvent" msprop:Generator_TablePropName="StatistikJumlahSiswaPerEkstrakurikuler" msprop:Generator_RowChangedName="StatistikJumlahSiswaPerEkstrakurikulerRowChanged" msprop:Generator_RowChangingName="StatistikJumlahSiswaPerEkstrakurikulerRowChanging" msprop:Generator_TableClassName="StatistikJumlahSiswaPerEkstrakurikulerDataTable" msprop:Generator_RowClassName="StatistikJumlahSiswaPerEkstrakurikulerRow" msprop:Generator_TableVarName="tableStatistikJumlahSiswaPerEkstrakurikuler" msprop:Generator_UserTableName="StatistikJumlahSiswaPerEkstrakurikuler">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="nama_ekskul" msprop:Generator_ColumnPropNameInRow="nama_ekskul" msprop:Generator_ColumnPropNameInTable="nama_ekskulColumn" msprop:Generator_ColumnVarNameInTable="columnnama_ekskul" msprop:Generator_UserColumnName="nama_ekskul">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="jumlah_siswa" msprop:Generator_ColumnPropNameInRow="jumlah_siswa" msprop:Generator_ColumnPropNameInTable="jumlah_siswaColumn" msprop:Generator_ColumnVarNameInTable="columnjumlah_siswa" msprop:Generator_UserColumnName="jumlah_siswa" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataSiswaEkstrakurikuler" />
+      <xs:field xpath="mstns:NIS" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
